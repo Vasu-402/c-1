@@ -1,34 +1,5 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyMMCmuvL4Egp1u3WI7lsZTF",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/Vasu-402/c-1/blob/main/python%20basics\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
+#basics
+  #1
         "a = 10\n",
         "id(a)\n",
         "hex(id(a))\n",
@@ -39,64 +10,18 @@
         "hex(id(b))\n",
         "print(id(b))\n",
         "print(hex(id(b)))"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "s4vSJI12_W4m",
-        "outputId": "f51eb60a-d403-427c-ae82-a64b60956725"
-      },
-      "execution_count": 5,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "10758024\n",
-            "0xa42788\n",
-            "10758184\n",
-            "0xa42828\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "def listSum(numbers):\n",
-        "  if not numbers:\n",
-        "    return 0\n",
-        "  else:\n",
-        "    (f, rest) = numbers\n",
-        "    return f + listSum(rest)\n",
-        "\n",
-        "myList = (1, (2, (3, None)))\n",
-        "total = listSum(myList)\n",
-        "print(total)"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "taihWk59DktL",
-        "outputId": "d86c80a5-4633-4b27-98b4-58d67b8115de"
-      },
-      "execution_count": 13,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "6\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "from typing import ValuesView\n",
+   #2  
+       def listSum(numbers):
+  if not numbers:
+    return 0
+  else:
+    (f, rest) = numbers
+    return f + listSum(rest)
+
+myList = (1, (2, (3, None)))
+total = listSum(myList)
+print(total)
+    #3
         "age = 20\n",
         "cgp = 8.10\n",
         "is_studying = True\n",
@@ -108,34 +33,8 @@
         "print(type(is_studying))\n",
         "print(department)\n",
         "print(college)"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "ugZCpidmFnIW",
-        "outputId": "33b9207b-d5a1-4429-f348-b98c2aea39a4"
-      },
-      "execution_count": 4,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "20\n",
-            "8.1\n",
-            "True\n",
-            "<class 'bool'>\n",
-            "ECE\n",
-            "View\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "#implicit type converter\n",
+      
+    #4
         "a = True\n",
         "b = 30\n",
         "print(a+b)\n",
@@ -144,89 +43,18 @@
         "y = 20\n",
         "print(x+y)\n",
         "print(type(x+y))"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "jFIVtzwTLhGR",
-        "outputId": "bd084cdd-7225-446b-b85f-7f244dba9e77"
-      },
-      "execution_count": 3,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "31\n",
-            "21.1\n",
-            "<class 'float'>\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
+    #5
         "age = input(\"enter your age:\")\n",
         "print(\"my age:\",age)\n",
         "print(type(age))\n",
         "print(f\"{age}\")"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "bRY7Ly9ILL-E",
-        "outputId": "3e36d14a-4852-461e-8ed5-f65b04a1c79d"
-      },
-      "execution_count": 6,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "enter your age:20\n",
-            "my age: 20\n",
-            "<class 'str'>\n",
-            "20\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
+    #6
         "a=int(input())\n",
         "b=int(input())\n",
         "sum=a+b\n",
         "print(\"sum\",sum)\n",
         "print(f\"{sum}\")"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "CfrH7SwVQWrK",
-        "outputId": "61812585-e3f7-4adb-90d8-2680dde7ccd0"
-      },
-      "execution_count": 8,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "10\n",
-            "20\n",
-            "sum 30\n",
-            "30\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
+    #7
         "sem1=float(input(\"enter sem1 marks:\"))\n",
         "sem2=float(input(\"enter sem2 marks:\"))\n",
         "sem3=float(input(\"enter sem3 marks:\"))\n",
@@ -235,38 +63,6 @@
         "print(\"sum:\",sum)\n",
         "avg=sum/4\n",
         "print(\"avg:\",avg)"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "OPbuqIfSRWZA",
-        "outputId": "3db61ca0-0eea-43f9-fcad-03c440d8d02d"
-      },
-      "execution_count": 13,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "enter sem1 marks:8.23\n",
-            "enter sem2 marks:8.22\n",
-            "enter sem3 marks:8.10\n",
-            "enter sem4 marks:7.88\n",
-            "sum: 32.43000000000001\n",
-            "avg: 8.107500000000002\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [],
-      "metadata": {
-        "id": "6qzchhbQTYJr"
-      },
-      "execution_count": null,
-      "outputs": []
-    }
-  ]
-}
+     #8
+         print("heelooooo","wooorlddddd",end="!!!")
+         print("whasuppp","amigosss",sep="&")
